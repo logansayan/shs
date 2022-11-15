@@ -1,0 +1,22 @@
+{
+  "name": "shs",
+  "version": "1.0.0",
+  "description": "SHS School Website",
+  "main": "app.js",
+  "scripts": {
+    "compile-sass": "node-sass ./sass/main.scss ./styles/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/logansayan/shs.git"
+  },
+  "author": "Sayan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/logansayan/shs/issues"
+  },
+  "homepage": "https://github.com/logansayan/shs#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
