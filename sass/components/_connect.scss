@@ -1,0 +1,26 @@
+.connect {
+  background-color: $color-purple-dark;
+  padding: $default-section-padding;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__card {
+    background-color: rgba($color-primary-dark, .5);
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    flex: 0 0 25rem;
+
+    &--title {
+      color: $color-primary-white;
+      font-size: 4rem;
+      margin-bottom: 2rem;
+    }
+
+    &--paragraph {
+      color: $color-secondary-white;
+      font-weight: 400;
+    }
+  }
+}

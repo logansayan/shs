@@ -1,0 +1,18 @@
+.vision {
+  padding: $default-section-padding;
+  background-image: linear-gradient(to right bottom, rgba($color-purple-light, .8), rgba($color-purple-dark, .8));
+
+  &::before {
+    content: "";
+  }
+
+  &__heading {
+    @include sectionHeading;
+  }
+
+  &__paragraph {
+    max-width: 80rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+}

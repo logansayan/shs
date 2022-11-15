@@ -1,0 +1,48 @@
+.header {
+  min-height: 100vh;
+  background-color: rgba($color-primary-dark, .3);
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../../img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    filter: brightness(.4);
+    z-index: -999;
+  }
+
+  &__logo-container {
+    position: absolute;
+    left: 7rem;
+    top: 5rem;
+    padding: 2rem;
+  }
+
+  &__logo--img {
+    width: 100%;
+  }
+
+  &__text {
+    text-align: center;
+    padding: 20% 0;
+
+    &--heading {
+      color: $color-primary-white;
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 3rem;
+    }
+
+    &--paragraph {
+      color: $color-secondary-white;
+      font-weight: 600;
+    }
+  }
+}

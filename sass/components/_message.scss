@@ -1,0 +1,26 @@
+.message {
+  padding: $default-section-padding;
+
+  &__heading {
+    @include sectionHeading;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+  &__content--img {
+    max-width: 30rem;
+    margin-right: 5rem;
+    border-radius: 50%;
+    border: 5px solid $color-purple-dark;
+  }
+
+  &__content--paragraph {
+
+  }
+}

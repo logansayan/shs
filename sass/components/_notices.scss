@@ -1,0 +1,48 @@
+.notices {
+  padding: $default-section-padding;
+
+  &__heading {
+    @include sectionHeading;
+  }
+
+  &__container {
+    margin: 0 auto;
+    width: min-content;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 60rem;
+    background-color: rgba($color-purple-light, .5);
+    padding: 1rem;
+    border-radius: 1rem;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    &--title {
+      
+    }
+
+    &--download {
+      margin-left: 3rem;
+      text-decoration: none;
+      color: $color-purple-dark;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &--date {
+      margin-left: auto;
+      background-color: rgba($color-purple-dark, .8);
+      color: $color-primary-white;
+      padding: .5rem 1rem;
+      border-radius: 1rem;
+    }
+  }
+}

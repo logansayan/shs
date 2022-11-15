@@ -1,0 +1,30 @@
+.header__nav {
+  min-width: 60rem;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  position: absolute;
+  right: 5rem;
+  top: 7rem;
+  background-color: rgba($color-purple-light, .5);
+  padding: 2rem;
+  border-radius: 10rem;
+
+  &--item {
+
+  }
+
+  &--link {
+    color: $color-primary-white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    transition: all .2s;
+
+    &:hover {
+      background-color: rgba($color-primary-dark, .2);
+      color: $color-primary-white;
+    }
+  }
+}
