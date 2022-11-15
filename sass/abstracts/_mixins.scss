@@ -1,0 +1,13 @@
+@mixin sectionHeading {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: $color-secondary-dark;
+  margin-bottom: 5rem;
+}
+
+@mixin sectionSubheading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: $color-primary-dark;
+}
