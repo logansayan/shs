@@ -7,6 +7,7 @@
     background-image: url("../../img/hero.jpg");
     background-color: rgba($color-primary-dark, .3);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     position: absolute;
     height: 100%;
@@ -22,6 +23,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &__logo-container {
@@ -35,6 +41,7 @@
   &__text {
     text-align: center;
     margin-top: 18rem;
+    padding: 0 5rem;
 
     &--heading {
       color: $color-primary-white;

@@ -23,6 +23,12 @@ $breakpoint argument choices:
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 43.75%; } }
 
 body {
   box-sizing: border-box;
@@ -45,6 +51,7 @@ hr {
     background-image: url("../../img/hero.jpg");
     background-color: rgba(57, 62, 70, 0.3);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     position: absolute;
     height: 100%;
@@ -58,11 +65,16 @@ hr {
     display: flex;
     justify-content: space-around;
     align-items: center; }
+    @media (max-width: 59.375em) {
+      .header__top {
+        flex-direction: column;
+        justify-content: center; } }
   .header__logo--img {
     width: 100%; }
   .header__text {
     text-align: center;
-    margin-top: 18rem; }
+    margin-top: 18rem;
+    padding: 0 5rem; }
     .header__text--heading {
       color: #FFF;
       font-family: "Poppins", sans-serif;
@@ -84,6 +96,16 @@ hr {
   background-color: rgba(222, 186, 206, 0.5);
   padding: 2rem;
   border-radius: 2rem; }
+  @media (max-width: 59.375em) {
+    .header__nav {
+      margin: 0;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: baseline; } }
+  @media (max-width: 59.375em) {
+    .header__nav--item {
+      margin: 1rem; } }
   .header__nav--link {
     color: #FFF;
     text-decoration: none;
@@ -95,23 +117,23 @@ hr {
       background-color: rgba(57, 62, 70, 0.2);
       color: #FFF; }
 
-.connect {
+.features {
   background-color: #7F669D;
   padding: 5rem 0;
   display: flex;
   justify-content: space-around;
   align-items: center; }
-  .connect__card {
+  .features__card {
     background-color: rgba(57, 62, 70, 0.5);
     padding: 2rem 2.5rem;
     border-radius: 1rem;
     text-align: center;
     flex: 0 0 25rem; }
-    .connect__card--title {
+    .features__card--title {
       color: #FFF;
       font-size: 4rem;
       margin-bottom: 2rem; }
-    .connect__card--paragraph {
+    .features__card--paragraph {
       color: #EFEFEF;
       font-weight: 400; }
 
@@ -186,14 +208,29 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center; }
+    @media (max-width: 59.375em) {
+      .recent__content {
+        flex-direction: column; } }
   .recent__card {
     box-shadow: 0 0.1rem 2rem #393E46;
-    flex: 0 0 40rem;
+    flex: 0 0 35rem;
     border-radius: 5px;
     height: 40rem;
     outline: 3px solid #7F669D; }
+    @media (max-width: 75em) {
+      .recent__card {
+        width: 30rem;
+        height: 35rem; } }
+    @media (max-width: 59.375em) {
+      .recent__card {
+        flex: 0 0 20rem;
+        height: auto; } }
     .recent__card:not(:last-child) {
       margin-right: 5rem; }
+      @media (max-width: 59.375em) {
+        .recent__card:not(:last-child) {
+          margin: 0;
+          margin-bottom: 5rem; } }
     .recent__card--img {
       width: 100%;
       border-radius: 5px 5px 0 0; }
