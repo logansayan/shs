@@ -285,6 +285,9 @@ hr {
   .about__container {
     margin: 0 auto;
     max-width: 120rem; }
+    @media (max-width: 75em) {
+      .about__container {
+        max-width: 80%; } }
   .about__content-1 {
     display: flex;
     align-items: center;
@@ -307,6 +310,15 @@ hr {
     .about__content-3--img {
       box-shadow: 0 0.1rem 1rem #393E46;
       margin-right: 3rem; }
+  @media (max-width: 75em) {
+    .about__content-1, .about__content-2, .about__content-3 {
+      flex-direction: column-reverse;
+      text-align: center; } }
+  @media (max-width: 75em) {
+    .about__content-1--img, .about__content-2--img, .about__content-3--img {
+      margin: 0;
+      margin-top: 5rem;
+      max-width: 40rem; } }
   .about__content-1--subheading, .about__content-2--subheading, .about__content-3--subheading {
     font-size: 2rem;
     font-weight: 600;
