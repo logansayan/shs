@@ -2,8 +2,22 @@
   background-color: $color-purple-dark;
   padding: $default-section-padding;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+
+  @include respond(tab-land) {
+    display: grid;
+    grid-template-columns: repeat(2, 40rem);
+    grid-row-gap: 5rem;
+    justify-content: space-around;
+    padding: 3rem;
+  }
+
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   &__card {
     background-color: rgba($color-primary-dark, .5);
@@ -11,6 +25,19 @@
     border-radius: 1rem;
     text-align: center;
     flex: 0 0 25rem;
+
+    @include respond(tab-port) {
+      flex: 0;
+      width: 70%;
+    }
+
+    &:not(:last-child) {
+      margin-right: 5rem;
+
+      @include respond(tab-land) {
+        margin: 0;
+      }
+    }
 
     &--title {
       color: $color-primary-white;
