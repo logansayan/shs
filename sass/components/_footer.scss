@@ -10,9 +10,9 @@
 
   &__text {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 5rem;
+    // padding: 0 10rem;
 
     @include respond(tab-port) {
       flex-direction: column;
@@ -49,8 +49,6 @@
       }
     }
   }
-
-  
 
   &__app {
     font-size: 3rem;
