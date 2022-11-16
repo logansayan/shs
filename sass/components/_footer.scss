@@ -1,15 +1,6 @@
 .footer {
-  position: relative;
   background-color: $color-purple-dark;
   padding: $default-section-padding;
-
-  &__content {
-    display: flex;
-    max-width: 120rem;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-  }
 
   &__logo {
     display: block;
@@ -17,13 +8,34 @@
     margin-bottom: 2rem;
   }
 
-  &__links {
-    border-top: 1px solid $color-primary-white;
-    padding-top: 2rem;
-    width: fit-content;
+  &__text {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 5rem;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    // margin-left: 5rem;
+    display: flex;
+    margin-bottom: 5rem;
+  }
+
+  &__group {
     list-style: none;
+    
+    &:not(:last-child) {
+      margin-right: 7rem;
+    }
+    &--title {
+      color: $color-secondary-dark;
+    }
+
+
   }
 
   &__item {
@@ -31,17 +43,14 @@
     &--link {
       color: $color-primary-white;
       text-decoration: none;
-      transition: all .2s;
 
       &:hover {
-        color: $color-secondary-dark;
+        text-decoration: underline;
       }
     }
-
-    &:not(:last-child) {
-      margin-right: 2rem;
-    }
   }
+
+  
 
   &__app {
     font-size: 3rem;
@@ -53,6 +62,8 @@
     padding: .5rem 1rem;
     border-radius: 5px;
     transition: all .2s;
+    // width: fit-content;
+    // margin-left: auto;
 
     &:hover {
       background-color: $color-primary-white;

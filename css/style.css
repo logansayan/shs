@@ -102,10 +102,10 @@ hr {
       margin-top: 2rem;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: baseline; } }
+      background-color: rgba(57, 62, 70, 0.5); } }
   @media (max-width: 59.375em) {
     .header__nav--item {
-      margin: 1rem; } }
+      margin: 2rem; } }
   .header__nav--link {
     color: #FFF;
     text-decoration: none;
@@ -113,9 +113,16 @@ hr {
     padding: 1rem 2rem;
     border-radius: 1rem;
     transition: all .2s; }
+    @media (max-width: 59.375em) {
+      .header__nav--link {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #393E46; } }
     .header__nav--link:hover {
       background-color: rgba(57, 62, 70, 0.2);
       color: #FFF; }
+      @media (max-width: 59.375em) {
+        .header__nav--link:hover {
+          background-color: #393E46; } }
 
 .features {
   background-color: #7F669D;
@@ -404,34 +411,34 @@ hr {
         margin-top: 5rem; } }
 
 .footer {
-  position: relative;
   background-color: #7F669D;
   padding: 5rem 0; }
-  .footer__content {
-    display: flex;
-    max-width: 120rem;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center; }
   .footer__logo {
     display: block;
     margin: 0 auto;
     margin-bottom: 2rem; }
-  .footer__links {
-    border-top: 1px solid #FFF;
-    padding-top: 2rem;
-    width: fit-content;
+  .footer__text {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 5rem; }
+    @media (max-width: 59.375em) {
+      .footer__text {
+        flex-direction: column; } }
+  .footer__content {
+    display: flex;
+    margin-bottom: 5rem; }
+  .footer__group {
     list-style: none; }
+    .footer__group:not(:last-child) {
+      margin-right: 7rem; }
+    .footer__group--title {
+      color: #181818; }
   .footer__item--link {
     color: #FFF;
-    text-decoration: none;
-    transition: all .2s; }
+    text-decoration: none; }
     .footer__item--link:hover {
-      color: #181818; }
-  .footer__item:not(:last-child) {
-    margin-right: 2rem; }
+      text-decoration: underline; }
   .footer__app {
     font-size: 3rem;
     color: #FFF;

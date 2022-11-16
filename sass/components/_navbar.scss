@@ -13,13 +13,13 @@
     margin-top: 2rem;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: baseline;
+    background-color: rgba($color-primary-dark, .5);
   }
 
   &--item {
     
     @include respond(tab-port) {
-      margin: 1rem;
+      margin: 2rem;
     }
   }
 
@@ -31,9 +31,18 @@
     border-radius: 1rem;
     transition: all .2s;
 
+    @include respond(tab-port) {
+      background-color: rgba($color-primary-white, .8);
+      color: $color-primary-dark;
+    }
+
     &:hover {
       background-color: rgba($color-primary-dark, .2);
       color: $color-primary-white;
+
+      @include respond(tab-port) {
+        background-color: $color-primary-dark;
+      }
     }
   }
 }
