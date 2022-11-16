@@ -9,18 +9,38 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 120rem;
+    max-width: 80%;
     margin: 0 auto;
+
+    @include respond(tab-land) {
+      max-width: 80%;
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 
   &__content--img {
     max-width: 30rem;
     margin-right: 5rem;
-    border-radius: 2rem;
-    border: 5px solid $color-purple-dark;
+    border-radius: 1rem;
+    outline: 3px solid $color-purple-dark;
+
+    @include respond(tab-port) {
+      // max-width: 20rem;
+      border-radius: 50%;
+      margin: 0;
+    }
   }
 
   &__content--paragraph {
+    font-size: 1.5rem;
+
+    @include respond(tab-port) {
+      text-align: center;
+      margin-top: 5rem;
+    }
   }
 
   
