@@ -15,20 +15,13 @@
     align-items: center;
     margin-top: 10rem;
 
-    &--subheading {
-      @include sectionSubheading;
-    }
-
     &--img {
       margin-right: 5rem;
       // border-radius: 2rem;
       box-shadow: 0 .1rem 1rem $color-primary-dark;
     }
 
-    &--paragraph {
-      font-style: italic;
-      color: $color-primary-dark;
-    }
+    
   }
 
   &__content-2 {
@@ -36,10 +29,6 @@
     align-items: center;
     flex-direction: row-reverse;
     margin-top: 10rem;
-    
-    &--subheading {
-      @include sectionSubheading;
-    }
 
     &--img {
       // border-radius: 2rem;
@@ -47,10 +36,7 @@
       margin-left: 3rem;
     }
 
-    &--paragraph {
-      font-style: italic;
-      color: $color-primary-dark;
-    }
+    
   }
 
   &__content-3 {
@@ -58,17 +44,22 @@
     align-items: center;
     margin-top: 10rem;
 
-    &--subheading {
-      @include sectionSubheading;
-    }
-
     &--img {
       box-shadow: 0 .1rem 1rem $color-primary-dark;
       margin-right: 3rem;
     }
+  }
+
+  &__content-1,
+  &__content-2,
+  &__content-3 {
+    &--subheading {
+      @include sectionSubheading;
+    }
 
     &--paragraph {
       font-style: italic;
+      font-family: $font-secondary;
       color: $color-primary-dark;
     }
   }

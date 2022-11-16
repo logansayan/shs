@@ -1,14 +1,12 @@
 .header__nav {
-  min-width: 60rem;
+  max-width: 90rem;
   display: flex;
   list-style: none;
   justify-content: space-between;
-  position: absolute;
-  right: 5rem;
-  top: 7rem;
+  margin-left: auto;
   background-color: rgba($color-purple-light, .5);
   padding: 2rem;
-  border-radius: 10rem;
+  border-radius: 2rem;
 
   &--item {
 
@@ -19,7 +17,7 @@
     text-decoration: none;
     font-size: 2rem;
     padding: 1rem 2rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     transition: all .2s;
 
     &:hover {
