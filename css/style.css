@@ -147,6 +147,9 @@ hr {
     border-radius: 1rem; }
     .notices__item:not(:last-child) {
       margin-bottom: 2rem; }
+    .notices__item--title {
+      font-weight: 600;
+      color: #181818; }
     .notices__item--download {
       margin-left: 3rem;
       text-decoration: none;
@@ -159,6 +162,48 @@ hr {
       color: #FFF;
       padding: .5rem 1rem;
       border-radius: 1rem; }
+
+.recent {
+  padding: 5rem 0; }
+  .recent__heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #181818;
+    margin-bottom: 5rem;
+    position: relative; }
+    .recent__heading::after {
+      content: "";
+      position: absolute;
+      bottom: -5%;
+      right: 50%;
+      transform: translateX(50%);
+      background-color: #393E46;
+      height: 1px;
+      width: 10rem; }
+  .recent__content {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .recent__card {
+    box-shadow: 0 0.1rem 2rem #393E46;
+    flex: 0 0 40rem;
+    border-radius: 5px;
+    height: 40rem;
+    outline: 3px solid #7F669D; }
+    .recent__card:not(:last-child) {
+      margin-right: 5rem; }
+    .recent__card--img {
+      width: 100%;
+      border-radius: 5px 5px 0 0; }
+    .recent__card--content {
+      padding: 2rem; }
+    .recent__card--title {
+      font-family: "Raleway", sans-serif;
+      color: #181818; }
+    .recent__card--date {
+      color: #393E46; }
 
 .about {
   padding: 5rem 0; }

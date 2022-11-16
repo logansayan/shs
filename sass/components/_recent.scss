@@ -1,0 +1,45 @@
+.recent {
+  padding: $default-section-padding;
+  
+
+  &__heading {
+    @include sectionHeading;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__card {
+    box-shadow: 0 .1rem 2rem $color-primary-dark;
+    flex: 0 0 40rem;
+    border-radius: 5px;
+    height: 40rem;
+    outline: 3px solid $color-purple-dark;
+
+    &:not(:last-child) {
+      margin-right: 5rem;
+    }
+
+    &--img {
+       width: 100%;
+       border-radius: 5px 5px 0 0;
+       
+    }
+
+    &--content {
+      padding: 2rem;
+    }
+
+    &--title {
+      font-family: $font-secondary;
+      color: $color-secondary-dark;
+    }
+
+    &--date {
+      color: $color-primary-dark;
+    }
+  }
+}
