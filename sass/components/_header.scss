@@ -21,13 +21,15 @@
   }
 
   &__expand {
-    position: absolute;
+    position: fixed;
     right: 5rem;
     top: 7rem;
     font-size: 4rem;
     color: $color-secondary-white;
     cursor: pointer;
     transition: color .2s;
+    z-index: 999;
+    text-shadow: 0 .01rem .2rem $color-secondary-dark;
 
     &:hover {
       color: rgba($color-primary-white, .8);

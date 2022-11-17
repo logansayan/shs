@@ -3,19 +3,29 @@ const nav = document.querySelector(".header__nav")
 
 
 const addRemoveHeader = function (){
-  if (window.innerWidth < 950) {
+  headerExpand.classList.replace("fa-xmark", "fa-bars")
+
+  if (window.innerWidth <= 950) {
     nav.classList.add("hidden")
     headerExpand.classList.remove("hidden")
 
-    headerExpand.addEventListener("click", function () {
-      nav.classList.remove("hidden")
-      headerExpand.classList.add("hidden")
-    })
+    
   } else {
     nav.classList.remove("hidden")
     headerExpand.classList.add("hidden")
   }
 }
+
+headerExpand.addEventListener("click", function () {
+  if (nav.classList.contains("hidden")) {
+    nav.classList.remove("hidden")
+    headerExpand.classList.replace("fa-bars", "fa-xmark")
+  } else {
+    nav.classList.add("hidden")
+    headerExpand.classList.replace("fa-xmark", "fa-bars")
+  }
+  // headerExpand.classList.add("hidden")
+})
 
 window.onload = addRemoveHeader
 
