@@ -54,7 +54,7 @@ hr {
   overflow: hidden; }
   .header::before {
     content: "";
-    background-image: url("../../img/hero.jpg");
+    background-image: url("../img/hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -330,7 +330,7 @@ hr {
     margin: 0 auto;
     max-width: 120rem;
     font-family: "Raleway", sans-serif;
-    padding: 0 2rem; }
+    padding: 0; }
     @media (max-width: 75em) {
       .about__container {
         max-width: 80%; } }
