@@ -1,12 +1,9 @@
 .header {
   overflow: hidden;
-  // margin: auto;
-  // position: relative;
 
   &::before {
     content: "";
     background-image: url("../../img/hero.jpg");
-    background-color: rgba($color-primary-dark, .3);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

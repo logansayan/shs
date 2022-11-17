@@ -9,6 +9,7 @@
     margin: 0 auto;
     max-width: 120rem;
     font-family: $font-secondary;
+    padding: 0 2rem;
 
     @include respond(tab-land) {
       max-width: 80%;

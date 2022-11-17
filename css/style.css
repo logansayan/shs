@@ -55,7 +55,6 @@ hr {
   .header::before {
     content: "";
     background-image: url("../../img/hero.jpg");
-    background-color: rgba(57, 62, 70, 0.3);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -330,7 +329,8 @@ hr {
   .about__container {
     margin: 0 auto;
     max-width: 120rem;
-    font-family: "Raleway", sans-serif; }
+    font-family: "Raleway", sans-serif;
+    padding: 0 2rem; }
     @media (max-width: 75em) {
       .about__container {
         max-width: 80%; } }
