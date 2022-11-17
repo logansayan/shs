@@ -7,6 +7,7 @@
   background-color: rgba($color-primary-dark, .5);
   padding: 2rem;
   border-radius: 3px;
+  transition: opacity .2s;
 
   @include respond(tab-port) {
     margin: 0;

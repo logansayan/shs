@@ -13,6 +13,12 @@ $breakpoint argument choices:
 - tab-land
 - big-desktop
 */
+.hidden {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  z-index: -999; }
+
 *,
 *::before,
 *::after {
@@ -45,7 +51,8 @@ hr {
   margin: 3rem auto; }
 
 .header {
-  min-height: 100vh; }
+  min-height: 100vh;
+  overflow: hidden; }
   .header::before {
     content: "";
     background-image: url("../../img/hero.jpg");
@@ -60,6 +67,13 @@ hr {
     top: 0;
     filter: brightness(0.4);
     z-index: -999; }
+  .header__expand {
+    position: absolute;
+    right: 5rem;
+    top: 7rem;
+    font-size: 4rem;
+    color: #FFF;
+    cursor: pointer; }
   .header__top {
     margin: 5rem;
     display: flex;
@@ -68,13 +82,17 @@ hr {
     @media (max-width: 59.375em) {
       .header__top {
         flex-direction: column;
-        justify-content: center; } }
+        justify-content: center;
+        padding-top: 3rem; } }
   .header__logo--img {
     width: 100%; }
   .header__text {
     text-align: center;
     margin-top: 18rem;
     padding: 0 5rem; }
+    @media (max-width: 59.375em) {
+      .header__text {
+        margin-top: 8rem; } }
     .header__text--heading {
       color: #FFF;
       font-family: "Poppins", sans-serif;
@@ -95,7 +113,8 @@ hr {
   margin-left: auto;
   background-color: rgba(57, 62, 70, 0.5);
   padding: 2rem;
-  border-radius: 3px; }
+  border-radius: 3px;
+  transition: opacity .2s; }
   @media (max-width: 59.375em) {
     .header__nav {
       margin: 0;
@@ -126,7 +145,8 @@ hr {
   padding: 5rem 0;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  clear: both; }
   @media (max-width: 75em) {
     .features {
       display: grid;
@@ -192,6 +212,9 @@ hr {
     background-color: rgba(222, 186, 206, 0.5);
     padding: 1rem;
     border-radius: 1rem; }
+    @media (max-width: 59.375em) {
+      .notices__item {
+        min-width: 40rem; } }
     .notices__item:not(:last-child) {
       margin-bottom: 2rem; }
     .notices__item--title {
