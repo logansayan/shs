@@ -72,8 +72,11 @@ hr {
     right: 5rem;
     top: 7rem;
     font-size: 4rem;
-    color: #FFF;
-    cursor: pointer; }
+    color: #EFEFEF;
+    cursor: pointer;
+    transition: color .2s; }
+    .header__expand:hover {
+      color: rgba(255, 255, 255, 0.8); }
   .header__top {
     margin: 5rem;
     display: flex;
@@ -89,7 +92,8 @@ hr {
   .header__text {
     text-align: center;
     margin-top: 18rem;
-    padding: 0 5rem; }
+    padding: 0 5rem;
+    float: center; }
     @media (max-width: 59.375em) {
       .header__text {
         margin-top: 8rem; } }

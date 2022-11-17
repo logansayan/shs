@@ -1,6 +1,7 @@
 .header {
   min-height: 100vh;
   overflow: hidden;
+  // margin: auto;
   // position: relative;
 
   &::before {
@@ -24,8 +25,13 @@
     right: 5rem;
     top: 7rem;
     font-size: 4rem;
-    color: $color-primary-white;
+    color: $color-secondary-white;
     cursor: pointer;
+    transition: color .2s;
+
+    &:hover {
+      color: rgba($color-primary-white, .8);
+    }
   }
 
   &__top {
@@ -54,6 +60,7 @@
     text-align: center;
     margin-top: 18rem;
     padding: 0 5rem;
+    float: center;
 
     @include respond(tab-port) {
       margin-top: 8rem;
