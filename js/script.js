@@ -28,6 +28,6 @@ headerExpand.addEventListener("click", function () {
   // headerExpand.classList.add("hidden")
 })
 
-window.onload = addRemoveHeader
+addRemoveHeader()
 
 window.addEventListener("resize", addRemoveHeader)
