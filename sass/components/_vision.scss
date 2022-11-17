@@ -1,18 +1,38 @@
 .vision {
-  padding: $default-section-padding;
   background-image: linear-gradient(to right bottom, rgba($color-purple-light, .8), rgba($color-purple-dark, .8));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
 
-  &::before {
-    content: "";
+  @include respond(tab-port) {
+    padding: 5rem 2rem;
   }
 
   &__heading {
-    @include sectionHeading;
+    // @include sectionHeading;
+    font-size: 5rem;
+    text-align: right;
+    line-height: 1;
+    position: relative;
+    margin-right: 6rem;
+    color: $color-primary-dark;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 120%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 3px;
+      height: 80%;
+      background-color: $color-secondary-white;
+    }
   }
 
   &__paragraph {
     max-width: 80rem;
     text-align: center;
-    margin: 0 auto;
+    color: $color-primary-dark;
   }
 }

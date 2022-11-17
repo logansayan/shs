@@ -8,6 +8,7 @@
   &__container {
     margin: 0 auto;
     max-width: 120rem;
+    font-family: $font-secondary;
 
     @include respond(tab-land) {
       max-width: 80%;
@@ -78,7 +79,6 @@
 
     &--paragraph {
       font-style: italic;
-      font-family: $font-secondary;
       color: $color-primary-dark;
     }
   }

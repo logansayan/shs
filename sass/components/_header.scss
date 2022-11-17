@@ -1,5 +1,4 @@
 .header {
-  min-height: 100vh;
   overflow: hidden;
   // margin: auto;
   // position: relative;
@@ -30,6 +29,7 @@
     transition: color .2s;
     z-index: 999;
     text-shadow: 0 .01rem .2rem $color-secondary-dark;
+    z-index: 1000;
 
     &:hover {
       color: rgba($color-primary-white, .8);
@@ -61,6 +61,7 @@
   &__text {
     text-align: center;
     margin-top: 18rem;
+    margin-bottom: 18rem;
     padding: 0 5rem;
     float: center;
 

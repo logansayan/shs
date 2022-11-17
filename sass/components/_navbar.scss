@@ -10,6 +10,8 @@
   transition: opacity .2s;
 
   @include respond(tab-port) {
+    max-width: none;
+    border-radius: 0;
     background-color: rgba($color-primary-dark, .8);
     position: fixed;
     left: 50%;
@@ -26,7 +28,6 @@
   }
 
   &--item {
-    
     @include respond(tab-port) {
       margin: 2rem;
     }
@@ -40,10 +41,12 @@
     border-radius: 3px;
     transition: all .2s;
     position: relative;
+    
 
     @include respond(tab-port) {
       background-color: rgba($color-primary-white, .8);
       color: $color-primary-dark;
+      min-width: 20%;
     }
 
     &:hover {

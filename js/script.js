@@ -20,6 +20,7 @@ headerExpand.addEventListener("click", function () {
   if (nav.classList.contains("hidden")) {
     nav.classList.remove("hidden")
     headerExpand.classList.replace("fa-bars", "fa-xmark")
+    nav.style.zIndex = "999"
   } else {
     nav.classList.add("hidden")
     headerExpand.classList.replace("fa-xmark", "fa-bars")
