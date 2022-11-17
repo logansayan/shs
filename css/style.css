@@ -450,16 +450,21 @@ hr {
         flex-direction: column; } }
   .footer__content {
     display: flex;
+    margin: 0 1rem;
     margin-bottom: 5rem; }
   .footer__group {
     list-style: none; }
     .footer__group:not(:last-child) {
       margin-right: 7rem; }
+      @media (max-width: 59.375em) {
+        .footer__group:not(:last-child) {
+          margin-right: 3rem; } }
     .footer__group--title {
-      color: #181818; }
+      color: #393E46; }
   .footer__item--link {
     color: #FFF;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 1.4rem; }
     .footer__item--link:hover {
       text-decoration: underline; }
   .footer__app {
