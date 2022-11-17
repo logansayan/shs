@@ -2,12 +2,6 @@
   background-color: $color-purple-dark;
   padding: $default-section-padding;
 
-  &__logo {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 2rem;
-  }
-
   &__text {
     display: flex;
     justify-content: space-around;
@@ -16,6 +10,16 @@
 
     @include respond(tab-port) {
       flex-direction: column;
+    }
+  }
+
+  &__logo {
+    width: 8rem;
+    margin-right: 5rem;
+
+    @include respond(tab-port) {
+      margin: 0;
+      margin-bottom: 3rem;
     }
   }
 

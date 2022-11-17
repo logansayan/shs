@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Poppins:ital,wght@0,100;0,400;0,600;0,700;0,900;1,100;1,400&family=Raleway:ital,wght@0,100;0,400;0,600;0,700;0,900;1,100;1,400&display=swap");
 /*
 0 - 600px: Phone
 600px - 950px: Tablet portrait
@@ -376,33 +376,32 @@ hr {
 
 .vision {
   background-image: linear-gradient(to right bottom, rgba(222, 186, 206, 0.8), rgba(127, 102, 157, 0.8));
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 5rem; }
   @media (max-width: 59.375em) {
     .vision {
       padding: 5rem 2rem; } }
   .vision__heading {
-    font-size: 5rem;
-    text-align: right;
-    line-height: 1;
-    position: relative;
-    margin-right: 6rem;
-    color: #393E46; }
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #181818;
+    margin-bottom: 5rem;
+    position: relative; }
     .vision__heading::after {
       content: "";
       position: absolute;
-      left: 120%;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 3px;
-      height: 80%;
-      background-color: #EFEFEF; }
+      bottom: -5%;
+      right: 50%;
+      transform: translateX(50%);
+      background-color: #393E46;
+      height: 1px;
+      width: 10rem; }
   .vision__paragraph {
     max-width: 80rem;
     text-align: center;
-    color: #393E46; }
+    color: #393E46;
+    margin: 0 auto; }
 
 .message {
   padding: 5rem 0; }
@@ -454,10 +453,6 @@ hr {
 .footer {
   background-color: #7F669D;
   padding: 5rem 0; }
-  .footer__logo {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 2rem; }
   .footer__text {
     display: flex;
     justify-content: space-around;
@@ -465,6 +460,13 @@ hr {
     @media (max-width: 59.375em) {
       .footer__text {
         flex-direction: column; } }
+  .footer__logo {
+    width: 8rem;
+    margin-right: 5rem; }
+    @media (max-width: 59.375em) {
+      .footer__logo {
+        margin: 0;
+        margin-bottom: 3rem; } }
   .footer__content {
     display: flex;
     margin: 0 1rem;
