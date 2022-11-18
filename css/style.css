@@ -299,14 +299,15 @@ hr {
     top: 50%;
     z-index: 10;
     border: none;
-    background: rgba(255, 255, 255, 0.7);
+    background: #EFEFEF;
     font-family: inherit;
-    color: #333;
+    color: #393E46;
     border-radius: 50%;
     height: 5.5rem;
     width: 5.5rem;
     font-size: 3.25rem;
-    cursor: pointer; }
+    cursor: pointer;
+    outline: none; }
   .slider__btn--left {
     left: 6%;
     transform: translate(-50%, -50%); }

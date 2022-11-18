@@ -12,14 +12,15 @@
     z-index: 10;
 
     border: none;
-    background: rgba(255, 255, 255, 0.7);
+    background: $color-secondary-white;
     font-family: inherit;
-    color: #333;
+    color: $color-primary-dark;
     border-radius: 50%;
     height: 5.5rem;
     width: 5.5rem;
     font-size: 3.25rem;
     cursor: pointer;
+    outline: none;
   }
 
   &__btn--left {
