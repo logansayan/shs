@@ -281,13 +281,23 @@ hr {
   background-color: rgba(57, 62, 70, 0.9);
   padding: 1rem 2rem;
   border-radius: 5px; }
+  @media (max-width: 37.5em) {
+    .recent__card--content {
+      padding: 0.5rem 1rem;
+      top: 75%; } }
 
 .recent__card--title {
   font-size: 2.5rem;
   color: #FFF; }
+  @media (max-width: 37.5em) {
+    .recent__card--title {
+      font-size: 1.8rem; } }
 
 .recent__card--date {
   color: #EFEFEF; }
+  @media (max-width: 37.5em) {
+    .recent__card--date {
+      font-size: 1.5rem; } }
 
 .slider {
   max-width: 100rem;
