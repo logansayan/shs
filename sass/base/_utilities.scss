@@ -3,7 +3,8 @@
 $default-section-padding: 5rem 0;
 
 .hidden {
-  display: none;
+  // display: none;
+  transform: scale(0);
   position: absolute;
   opacity: 0;
   z-index: -999;

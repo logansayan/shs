@@ -7,7 +7,7 @@
   background-color: rgba($color-primary-dark, 0.5);
   padding: 2rem;
   border-radius: 3px;
-  transition: opacity 0.2s;
+  transition: all 0.2s;
 
   @include respond(tab-port) {
     max-width: none;
@@ -16,6 +16,7 @@
     position: fixed;
     left: 50%;
     top: 50%;
+    transform: translate(-50%, -50%);
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -24,7 +25,6 @@
     align-items: center;
     // flex-wrap: wrap;
     justify-content: center;
-    transform: translate(-50%, -50%);
   }
 
   &--item {
