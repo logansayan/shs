@@ -161,38 +161,31 @@ hr {
 
 .features {
   background-color: #7F669D;
-  padding: 5rem 0;
-  display: flex;
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
   justify-content: center;
   align-items: center;
-  clear: both; }
-  @media (max-width: 75em) {
-    .features {
-      display: grid;
-      grid-template-columns: repeat(2, 40rem);
-      grid-row-gap: 5rem;
-      justify-content: space-around;
-      padding: 3rem; } }
+  height: max-content; }
   @media (max-width: 59.375em) {
     .features {
-      display: flex;
-      flex-direction: column;
-      justify-content: center; } }
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center; } }
+  @media (max-width: 37.5em) {
+    .features {
+      grid-template-columns: repeat(1, 1fr); } }
   .features__card {
     background-color: rgba(57, 62, 70, 0.5);
-    padding: 2rem 2.5rem;
+    padding: 5rem 2rem;
     border-radius: 1rem;
-    text-align: center;
-    flex: 0 0 25rem; }
+    text-align: center; }
     @media (max-width: 59.375em) {
       .features__card {
-        flex: 0;
-        width: 70%; } }
-    .features__card:not(:last-child) {
-      margin-right: 5rem; }
-      @media (max-width: 75em) {
-        .features__card:not(:last-child) {
-          margin: 0; } }
+        min-width: 30rem; } }
+    @media (max-width: 37.5em) {
+      .features__card {
+        width: 90%; } }
     .features__card--title {
       color: #FFF;
       font-size: 4rem;
@@ -389,7 +382,7 @@ hr {
     @media (max-width: 75em) {
       .about__container {
         max-width: 80%; } }
-    .about__container > img {
+    .about__container img {
       border-radius: 10px; }
   .about__content-1 {
     display: flex;
@@ -421,7 +414,7 @@ hr {
     .about__content-1--img, .about__content-2--img, .about__content-3--img {
       margin: 0;
       margin-top: 5rem;
-      max-width: 40rem; } }
+      width: 90%; } }
   .about__content-1--subheading, .about__content-2--subheading, .about__content-3--subheading {
     font-size: 2rem;
     font-weight: 600;

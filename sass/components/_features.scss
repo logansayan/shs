@@ -1,44 +1,44 @@
 .features {
   background-color: $color-purple-dark;
-  padding: $default-section-padding;
-  display: flex;
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
   justify-content: center;
   align-items: center;
-  clear: both;
-
-  @include respond(tab-land) {
-    display: grid;
-    grid-template-columns: repeat(2, 40rem);
-    grid-row-gap: 5rem;
-    justify-content: space-around;
-    padding: 3rem;
-  }
+  height: max-content;
+  // clear: both;
 
   @include respond(tab-port) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  @include respond(phone) {
+    grid-template-columns: repeat(1, 1fr);
   }
 
   &__card {
-    background-color: rgba($color-primary-dark, .5);
-    padding: 2rem 2.5rem;
+    background-color: rgba($color-primary-dark, 0.5);
+    padding: 5rem 2rem;
     border-radius: 1rem;
     text-align: center;
-    flex: 0 0 25rem;
 
     @include respond(tab-port) {
-      flex: 0;
-      width: 70%;
+      min-width: 30rem;
     }
 
-    &:not(:last-child) {
-      margin-right: 5rem;
-
-      @include respond(tab-land) {
-        margin: 0;
-      }
+    @include respond(phone) {
+      width: 90%;
     }
+
+    // &:not(:last-child) {
+    //   margin-right: 5rem;
+
+    //   @include respond(tab-land) {
+    //     margin: 0;
+    //   }
+    // }
 
     &--title {
       color: $color-primary-white;
