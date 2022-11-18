@@ -35,8 +35,6 @@ const navbar = function () {
   window.addEventListener("resize", addRemoveHeader);
 };
 
-navbar();
-
 // SLIDER
 
 const slider = function () {
@@ -130,4 +128,9 @@ const slider = function () {
   // Go to next slide every 20 seconds automatically
   setInterval(nextSlide, 20000);
 };
-slider();
+
+// CALLING THE FUNCTIONS
+if (document.getElementsByTagName("body")[0] !== undefined) {
+  navbar();
+  slider();
+}
