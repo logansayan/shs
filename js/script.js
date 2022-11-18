@@ -127,7 +127,7 @@ const slider = function () {
   sliderContainer.addEventListener("swiped-left", nextSlide);
   sliderContainer.addEventListener("swiped-right", prevSlide);
 
-  // Go to next slide every 7 seconds automatically
-  setInterval(nextSlide, 7000);
+  // Go to next slide every 20 seconds automatically
+  setInterval(nextSlide, 20000);
 };
 slider();

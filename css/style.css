@@ -13,12 +13,6 @@ $breakpoint argument choices:
 - tab-land
 - big-desktop
 */
-.hidden {
-  display: none;
-  position: absolute;
-  opacity: 0;
-  z-index: -999; }
-
 *,
 *::before,
 *::after {
@@ -146,16 +140,22 @@ hr {
     font-size: 2rem;
     padding: 1rem 2rem;
     border-radius: 3px;
-    transition: all 0.2s;
-    position: relative; }
+    transition: all 0.2s; }
     @media (max-width: 59.375em) {
       .header__nav--link, .header__nav--link:visited, .header__nav--link:link {
-        background-color: rgba(255, 255, 255, 0.8);
-        color: #393E46;
+        background-color: transparent;
+        color: #FFF;
+        border: 1px solid #FFF;
         min-width: 20%; } }
     .header__nav--link:hover, .header__nav--link:visited:hover, .header__nav--link:link:hover {
       background-color: #FFF;
       color: #393E46; }
+
+.hidden {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  z-index: -999; }
 
 .features {
   background-color: #7F669D;
@@ -326,7 +326,7 @@ hr {
   .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover; }
+    object-fit: contain; }
 
 .dots {
   position: absolute;
