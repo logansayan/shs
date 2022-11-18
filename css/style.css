@@ -66,7 +66,7 @@ hr {
     font-size: 4rem;
     color: #EFEFEF;
     cursor: pointer;
-    transition: color .2s;
+    transition: color 0.2s;
     z-index: 999;
     text-shadow: 0 0.01rem 0.2rem #181818;
     z-index: 1000; }
@@ -144,6 +144,7 @@ hr {
     @media (max-width: 59.375em) {
       .header__nav--link, .header__nav--link:visited, .header__nav--link:link {
         background-color: transparent;
+        font-size: 3rem;
         color: #FFF;
         border: 1px solid #FFF;
         min-width: 20%; } }
@@ -349,7 +350,7 @@ hr {
   .dots__dot:last-child {
     margin: 0; }
   .dots__dot--active {
-    background-color: #fff;
+    background-color: #EFEFEF;
     opacity: 1; }
 
 .about {

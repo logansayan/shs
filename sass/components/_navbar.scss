@@ -44,9 +44,8 @@
     transition: all 0.2s;
 
     @include respond(tab-port) {
-      // background-color: rgba($color-primary-white, 0.8);
       background-color: transparent;
-      // color: $color-primary-dark;
+      font-size: 3rem;
       color: $color-primary-white;
       border: 1px solid $color-primary-white;
       min-width: 20%;
