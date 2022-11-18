@@ -15,7 +15,8 @@
     align-items: center;
     justify-content: space-around;
     min-width: 60rem;
-    background-color: rgba($color-purple-light, .5);
+    // background-color: rgba($color-purple-light, 0.5);
+    background-color: rgba($color-primary-dark, 0.1);
     padding: 1rem;
     border-radius: 1rem;
 
@@ -44,9 +45,9 @@
 
     &--date {
       margin-left: auto;
-      background-color: rgba($color-purple-dark, .8);
+      background-color: rgba($color-purple-dark, 0.8);
       color: $color-primary-white;
-      padding: .5rem 1rem;
+      padding: 0.5rem 1rem;
       border-radius: 1rem;
     }
   }

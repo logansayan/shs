@@ -32,7 +32,7 @@
 
   &__group {
     list-style: none;
-    
+
     &:not(:last-child) {
       margin-right: 7rem;
 
@@ -44,13 +44,12 @@
     &--title {
       color: $color-primary-dark;
     }
-
-
   }
 
   &__item {
-
-    &--link {
+    &--link,
+    &--link:visited,
+    &--link:link {
       color: $color-primary-white;
       text-decoration: none;
       font-size: 1.4rem;
@@ -68,9 +67,9 @@
     display: flex;
     align-items: center;
     border: 2px solid $color-primary-white;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
-    transition: all .2s;
+    transition: all 0.2s;
     // width: fit-content;
     // margin-left: auto;
 
@@ -79,13 +78,13 @@
       color: $color-primary-dark;
 
       i {
-        transform: translateX(.3rem);
+        transform: translateX(0.3rem);
       }
     }
 
     i {
       margin-left: 1rem;
-      transition: all .2s;
+      transition: all 0.2s;
     }
   }
 
