@@ -1,5 +1,6 @@
 .about {
   padding: $default-section-padding;
+  margin: 0 2rem;
 
   &__heading {
     @include sectionHeading;
