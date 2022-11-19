@@ -5,11 +5,12 @@
   &__text {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     // padding: 0 10rem;
 
     @include respond(tab-port) {
       flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -91,7 +92,7 @@
   &__copyright {
     text-align: center;
     color: $color-secondary-white;
-    margin-top: 10rem;
+    margin-top: 2rem;
     font-size: 1.4rem;
   }
 }
