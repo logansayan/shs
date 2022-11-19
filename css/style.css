@@ -23,6 +23,9 @@ $breakpoint argument choices:
 html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
   @media (max-width: 75em) {
     html {
       font-size: 56.25%; } }
