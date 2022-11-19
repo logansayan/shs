@@ -1,5 +1,5 @@
 .features {
-  background-color: $color-purple-dark;
+  // background-color: $color-purple-dark;
   padding: 5rem 20rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -38,59 +38,87 @@
   }
 
   &__card {
-    background-color: rgba($color-primary-dark, 0.5);
     padding: 5rem 0;
     border-radius: 1rem;
     text-align: center;
-    // position: relative;
-    transition: all 1s;
+    position: relative;
+    transition: all 0.2s;
 
-    // &:hover {
-    //   background-image: linear-gradient(
-    //       to right bottom,
-    //       rgba($color-primary-white, 0.5),
-    //       rgba($color-primary-dark, 0.5)
-    //     ),
-    //     url("../img/hero.jpg");
-    //   background-position: center;
-    //   background-size: cover;
+    &::after {
+      content: "";
+      position: absolute;
+      background-size: cover;
+      background-position: center;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      filter: brightness(10%);
+      opacity: 0.4;
+      transition: all 0.2s;
+      border-radius: inherit;
+      background-color: transparent;
+      z-index: -999;
+    }
 
-    //   // &::after {
-    //   //   opacity: 0;
-    //   //   filter: blur(0.5);
-    //   // }
-    // }
+    &:hover {
+      background-color: rgba($color-purple-dark, 0.5);
+
+      &::after {
+        opacity: 1;
+        filter: brightness(100%);
+      }
+    }
+
+    &--1 {
+      &::after {
+        background-image: url("../img/about1.jpg");
+      }
+    }
+
+    &--2 {
+      &::after {
+        background-image: url("../img/about2.jpg");
+      }
+    }
+
+    &--3 {
+      &::after {
+        background-image: url("../img/about3.jpg");
+      }
+    }
+
+    &--4 {
+      &::after {
+        background-image: url("../img/recent1.jpg");
+      }
+    }
+
+    &--5 {
+      &::after {
+        background-image: url("../img/recent2.jpg");
+      }
+    }
+
+    &--6 {
+      &::after {
+        background-image: url("../img/recent3.jpg");
+      }
+    }
+
+    &--7 {
+      &::after {
+        background-image: url("../img/hero.jpg");
+      }
+    }
 
     @include respond(tab-port) {
-      // min-width: 30rem;
       width: 100%;
     }
 
     @include respond(phone) {
       width: 90%;
     }
-
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   left: 0;
-    //   top: 0;
-    //   width: 100%;
-    //   height: 100%;
-    //   background-image: url("../img/recent1.jpg");
-    //   background-position: center;
-    //   background-size: cover;
-    //   border-radius: inherit;
-    //   transition: all 0.2s;
-    // }
-
-    // &:not(:last-child) {
-    //   margin-right: 5rem;
-
-    //   @include respond(tab-land) {
-    //     margin: 0;
-    //   }
-    // }
 
     &--title {
       color: $color-primary-white;

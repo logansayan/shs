@@ -42,8 +42,8 @@ body {
 
 hr {
   border: 0;
-  border-bottom: 5px solid #393E46;
-  border-style: double;
+  border-bottom: 5px solid #323131;
+  border-style: dotted;
   max-width: 10rem;
   margin: 3rem auto; }
 
@@ -163,7 +163,6 @@ hr {
   z-index: -999; }
 
 .features {
-  background-color: #7F669D;
   padding: 5rem 20rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -193,11 +192,45 @@ hr {
       .features__grid--big {
         grid-column: auto; } }
   .features__card {
-    background-color: rgba(57, 62, 70, 0.5);
     padding: 5rem 0;
     border-radius: 1rem;
     text-align: center;
-    transition: all 1s; }
+    position: relative;
+    transition: all 0.2s; }
+    .features__card::after {
+      content: "";
+      position: absolute;
+      background-size: cover;
+      background-position: center;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      filter: brightness(10%);
+      opacity: 0.4;
+      transition: all 0.2s;
+      border-radius: inherit;
+      background-color: transparent;
+      z-index: -999; }
+    .features__card:hover {
+      background-color: rgba(127, 102, 157, 0.5); }
+      .features__card:hover::after {
+        opacity: 1;
+        filter: brightness(100%); }
+    .features__card--1::after {
+      background-image: url("../img/about1.jpg"); }
+    .features__card--2::after {
+      background-image: url("../img/about2.jpg"); }
+    .features__card--3::after {
+      background-image: url("../img/about3.jpg"); }
+    .features__card--4::after {
+      background-image: url("../img/recent1.jpg"); }
+    .features__card--5::after {
+      background-image: url("../img/recent2.jpg"); }
+    .features__card--6::after {
+      background-image: url("../img/recent3.jpg"); }
+    .features__card--7::after {
+      background-image: url("../img/hero.jpg"); }
     @media (max-width: 59.375em) {
       .features__card {
         width: 100%; } }
