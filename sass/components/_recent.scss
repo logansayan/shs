@@ -1,5 +1,6 @@
 .recent {
   padding: $default-section-padding;
+  background-color: rgba(#000, 0.2);
 
   &__heading {
     @include sectionHeading;
