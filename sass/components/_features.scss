@@ -42,7 +42,8 @@
     border-radius: 1rem;
     text-align: center;
     position: relative;
-    transition: all 0.2s;
+    transition: all 0.5s;
+    overflow: hidden;
 
     &::after {
       content: "";
@@ -54,26 +55,34 @@
       height: 100%;
       width: 100%;
       filter: brightness(10%);
-      opacity: 0.4;
-      transition: all 0.2s;
+      // opacity: 0.4;
+      transition: all 0.5s;
       border-radius: inherit;
       background-color: transparent;
       z-index: -999;
+      opacity: 1;
+
+      @include respond(phone) {
+        filter: brightness(60%);
+      }
     }
 
     &:hover {
-      background-color: rgba($color-purple-dark, 0.5);
+      background-color: rgba($color-primary-white, 0.1);
 
       &::after {
-        opacity: 1;
         filter: brightness(100%);
+        transform: scale(1.2);
+
+        @include respond(phone) {
+          transform: scale(1);
+          filter: brightness(60%);
+        }
       }
     }
 
-    &--1 {
-      &::after {
-        background-image: url("../img/about1.jpg");
-      }
+    &--1::after {
+      background-image: url("../img/about1.jpg");
     }
 
     &--2 {
@@ -124,11 +133,13 @@
       color: $color-primary-white;
       font-size: 4rem;
       margin-bottom: 2rem;
+      text-shadow: 0 0.01rem 6rem #000;
     }
 
     &--paragraph {
       color: $color-secondary-white;
       font-weight: 400;
+      text-shadow: 0 0.01rem 2rem #000;
     }
   }
 }
