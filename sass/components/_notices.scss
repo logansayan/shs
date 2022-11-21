@@ -16,12 +16,20 @@
     justify-content: space-around;
     min-width: 60rem;
     // background-color: rgba($color-purple-light, 0.5);
-    background-color: rgba($color-primary-dark, 0.1);
+    // background-color: rgba($color-primary-dark, 0.1);
+    border: 1px solid $color-primary-dark;
     padding: 1rem;
     border-radius: 1rem;
+    transition: all 0.2s;
+    backface-visibility: hidden;
 
     @include respond(tab-port) {
       min-width: 40rem;
+    }
+
+    &:hover {
+      transform: scale(1.01) translateY(-5px);
+      box-shadow: 0 0.2rem 1rem $color-primary-dark;
     }
 
     &:not(:last-child) {
@@ -45,8 +53,10 @@
 
     &--date {
       margin-left: auto;
-      background-color: rgba($color-purple-dark, 0.8);
+      // background-color: rgba($color-purple-dark, 0.8);
       color: $color-primary-white;
+      background-color: rgba($color-primary-dark, 0.9);
+      border: 1px solid $color-primary-dark;
       padding: 0.5rem 1rem;
       border-radius: 1rem;
     }

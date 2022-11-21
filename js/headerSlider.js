@@ -2,8 +2,8 @@ const headerSlider = function () {
   const header = document.querySelector(".header");
   const slides = document.querySelectorAll(".slide-item");
 
-  // const leftBtn = document.querySelector("#left");
-  // const rightBtn = document.querySelector("#right");
+  const leftBtn = document.querySelector("#left");
+  const rightBtn = document.querySelector("#right");
 
   let activeSlide = 0;
 
@@ -29,13 +29,13 @@ const headerSlider = function () {
     setActiveSlide();
   };
 
-  // rightBtn.addEventListener("click", () => {
-  //   nextSlide();
-  // });
+  rightBtn.addEventListener("click", () => {
+    nextSlide();
+  });
 
-  // leftBtn.addEventListener("click", () => {
-  //   prevSlide();
-  // });
+  leftBtn.addEventListener("click", () => {
+    prevSlide();
+  });
 
   setBgToBody();
 

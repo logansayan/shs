@@ -102,7 +102,7 @@ hr {
   background-size: cover;
   transition: 0.4s ease;
   position: relative;
-  opacity: 0.99; }
+  opacity: 0.9; }
 
 .header::before {
   content: "";
@@ -118,17 +118,17 @@ hr {
   /*   height: 70vh;
   width: 70vw; */
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100%;
+  width: 100%; }
 
 .slide-item {
   opacity: 0;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-position: center center;
   background-size: cover;
   position: absolute;
-  top: -15vh;
-  left: -15vw;
   transition: 0.4s ease;
   z-index: 1; }
 
@@ -136,25 +136,27 @@ hr {
   opacity: 1; }
 
 .arrow {
-  position: fixed;
+  position: absolute;
   background-color: transparent;
-  padding: 10px;
   font-size: 30px;
-  border: 2px solid orange;
   top: 50%;
   transform: translateY(-50%);
-  color: white;
+  color: rgba(255, 255, 255, 0.3);
   cursor: pointer;
-  border-radius: 10px; }
+  padding: 10rem 2rem;
+  border: none;
+  transition: all 0.2s; }
+  .arrow:hover {
+    color: rgba(255, 255, 255, 0.8); }
 
 .arrow:focus {
   outline: 0; }
 
 .left-arrow {
-  left: calc(5vw - 65px); }
+  left: 0; }
 
 .right-arrow {
-  right: calc(5vw - 65px); }
+  right: 0; }
 
 .header__nav {
   max-width: 90rem;
@@ -278,7 +280,7 @@ hr {
     .features__card--6::after {
       background-image: url("../img/recent3.jpg"); }
     .features__card--7::after {
-      background-image: url("../img/hero.jpg"); }
+      background-image: url("../img/hero1.jpg"); }
     @media (max-width: 59.375em) {
       .features__card {
         width: 100%; } }
@@ -322,12 +324,17 @@ hr {
     align-items: center;
     justify-content: space-around;
     min-width: 60rem;
-    background-color: rgba(57, 62, 70, 0.1);
+    border: 1px solid #393E46;
     padding: 1rem;
-    border-radius: 1rem; }
+    border-radius: 1rem;
+    transition: all 0.2s;
+    backface-visibility: hidden; }
     @media (max-width: 59.375em) {
       .notices__item {
         min-width: 40rem; } }
+    .notices__item:hover {
+      transform: scale(1.01) translateY(-5px);
+      box-shadow: 0 0.2rem 1rem #393E46; }
     .notices__item:not(:last-child) {
       margin-bottom: 2rem; }
     .notices__item--title {
@@ -341,8 +348,9 @@ hr {
         text-decoration: underline; }
     .notices__item--date {
       margin-left: auto;
-      background-color: rgba(127, 102, 157, 0.8);
       color: #FFF;
+      background-color: rgba(57, 62, 70, 0.9);
+      border: 1px solid #393E46;
       padding: 0.5rem 1rem;
       border-radius: 1rem; }
 
