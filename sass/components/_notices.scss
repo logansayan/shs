@@ -1,13 +1,37 @@
 .notices {
   padding: $default-section-padding;
+  overflow: hidden;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
   &__heading {
     @include sectionHeading;
   }
 
+  .scroll {
+    text-align: center;
+    padding: 2rem;
+    cursor: pointer;
+  }
+
+  .view-all {
+    text-align: center;
+    cursor: pointer;
+    color: $color-purple-dark;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   &__container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
     margin: 0 auto;
     width: min-content;
+    max-height: 25rem;
   }
 
   &__item {
@@ -25,11 +49,6 @@
 
     @include respond(tab-port) {
       min-width: 40rem;
-    }
-
-    &:hover {
-      transform: scale(1.01) translateY(-5px);
-      box-shadow: 0 0.2rem 1rem $color-primary-dark;
     }
 
     &:not(:last-child) {

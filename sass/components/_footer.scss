@@ -33,6 +33,7 @@
 
   &__group {
     list-style: none;
+    max-width: 20rem;
 
     &:not(:last-child) {
       margin-right: 7rem;
@@ -58,6 +59,15 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+
+  &__address,
+  &__phone {
+    color: $color-secondary-white;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
     }
   }
 

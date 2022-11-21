@@ -165,7 +165,7 @@ hr {
   list-style: none;
   justify-content: space-between;
   margin-left: auto;
-  background-color: rgba(57, 62, 70, 0.5);
+  background-color: rgba(57, 62, 70, 0.8);
   padding: 2rem;
   border-radius: 3px;
   transition: all 0.2s; }
@@ -261,7 +261,7 @@ hr {
       border-radius: inherit;
       background-color: transparent;
       z-index: -999;
-      filter: brightness(0.4); }
+      filter: brightness(0.5); }
     .features__card:hover::after {
       transform: scale(1.2); }
       @media (max-width: 37.5em) {
@@ -298,7 +298,10 @@ hr {
       text-shadow: 0 0.01rem 2rem #000; }
 
 .notices {
-  padding: 5rem 0; }
+  padding: 5rem 0;
+  overflow: hidden; }
+  .notices ::-webkit-scrollbar {
+    display: none; }
   .notices__heading {
     text-align: center;
     font-size: 3rem;
@@ -316,9 +319,22 @@ hr {
       background-color: #393E46;
       height: 1px;
       width: 10rem; }
+  .notices .scroll {
+    text-align: center;
+    padding: 2rem;
+    cursor: pointer; }
+  .notices .view-all {
+    text-align: center;
+    cursor: pointer;
+    color: #7F669D; }
+    .notices .view-all:hover {
+      text-decoration: underline; }
   .notices__container {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
     margin: 0 auto;
-    width: min-content; }
+    width: min-content;
+    max-height: 25rem; }
   .notices__item {
     display: flex;
     align-items: center;
@@ -332,9 +348,6 @@ hr {
     @media (max-width: 59.375em) {
       .notices__item {
         min-width: 40rem; } }
-    .notices__item:hover {
-      transform: scale(1.01) translateY(-5px);
-      box-shadow: 0 0.2rem 1rem #393E46; }
     .notices__item:not(:last-child) {
       margin-bottom: 2rem; }
     .notices__item--title {
@@ -631,7 +644,8 @@ hr {
     margin: 0 1rem;
     margin-bottom: 5rem; }
   .footer__group {
-    list-style: none; }
+    list-style: none;
+    max-width: 20rem; }
     .footer__group:not(:last-child) {
       margin-right: 7rem; }
       @media (max-width: 59.375em) {
@@ -645,6 +659,10 @@ hr {
     font-size: 1.4rem; }
     .footer__item--link:hover, .footer__item--link:visited:hover, .footer__item--link:link:hover {
       text-decoration: underline; }
+  .footer__address, .footer__phone {
+    color: #EFEFEF; }
+    .footer__address:not(:last-child), .footer__phone:not(:last-child) {
+      margin-bottom: 1rem; }
   .footer__app {
     font-size: 3rem;
     color: #FFF;
