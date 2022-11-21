@@ -115,8 +115,6 @@ hr {
   z-index: -999; }
 
 .slider-container {
-  /*   height: 70vh;
-  width: 70vw; */
   position: relative;
   overflow: hidden;
   height: 100%;
@@ -138,7 +136,7 @@ hr {
 .arrow {
   position: absolute;
   background-color: transparent;
-  font-size: 30px;
+  font-size: 3rem;
   top: 50%;
   transform: translateY(-50%);
   color: rgba(255, 255, 255, 0.3);
@@ -146,6 +144,9 @@ hr {
   padding: 10rem 2rem;
   border: none;
   transition: all 0.2s; }
+  @media (max-width: 37.5em) {
+    .arrow {
+      font-size: 2rem; } }
   .arrow:hover {
     color: rgba(255, 255, 255, 0.8); }
 
@@ -242,7 +243,6 @@ hr {
         grid-column: auto; } }
   .features__card {
     padding: 5rem 0;
-    border-radius: 3px;
     text-align: center;
     position: relative;
     transition: all 0.5s;
@@ -492,8 +492,6 @@ hr {
     @media (max-width: 75em) {
       .about__container {
         max-width: 80%; } }
-    .about__container img {
-      border-radius: 10px; }
   .about__content-1 {
     display: flex;
     align-items: center;
