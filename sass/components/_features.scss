@@ -54,29 +54,28 @@
       top: 0;
       height: 100%;
       width: 100%;
-      filter: brightness(10%);
-      // opacity: 0.4;
+      // filter: brightness(10%);
+      opacity: 0.8;
       transition: all 0.5s;
       border-radius: inherit;
       background-color: transparent;
       z-index: -999;
-      opacity: 1;
+      // opacity: 1;
+      // background-color: rgba($color-primary-white, 0.1);
+      filter: brightness(0.4);
 
       @include respond(phone) {
-        filter: brightness(60%);
+        // filter: brightness(60%);
       }
     }
 
     &:hover {
-      background-color: rgba($color-primary-white, 0.1);
-
       &::after {
-        filter: brightness(100%);
         transform: scale(1.2);
 
         @include respond(phone) {
           transform: scale(1);
-          filter: brightness(60%);
+          // filter: brightness(60%);
         }
       }
     }
