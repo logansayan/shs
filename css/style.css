@@ -242,7 +242,7 @@ hr {
         grid-column: auto; } }
   .features__card {
     padding: 5rem 0;
-    border-radius: 1rem;
+    border-radius: 3px;
     text-align: center;
     position: relative;
     transition: all 0.5s;
@@ -326,7 +326,7 @@ hr {
     min-width: 60rem;
     border: 1px solid #393E46;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 3px;
     transition: all 0.2s;
     backface-visibility: hidden; }
     @media (max-width: 59.375em) {
@@ -352,7 +352,7 @@ hr {
       background-color: rgba(57, 62, 70, 0.9);
       border: 1px solid #393E46;
       padding: 0.5rem 1rem;
-      border-radius: 1rem; }
+      border-radius: inherit; }
 
 .recent {
   padding: 5rem 0; }

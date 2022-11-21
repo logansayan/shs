@@ -19,7 +19,7 @@
     // background-color: rgba($color-primary-dark, 0.1);
     border: 1px solid $color-primary-dark;
     padding: 1rem;
-    border-radius: 1rem;
+    border-radius: 3px;
     transition: all 0.2s;
     backface-visibility: hidden;
 
@@ -58,7 +58,7 @@
       background-color: rgba($color-primary-dark, 0.9);
       border: 1px solid $color-primary-dark;
       padding: 0.5rem 1rem;
-      border-radius: 1rem;
+      border-radius: inherit;
     }
   }
 }
