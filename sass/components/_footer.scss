@@ -27,8 +27,14 @@
   &__content {
     // margin-left: 5rem;
     display: flex;
-    margin: 0 1rem;
     margin-bottom: 5rem;
+
+    @include respond(phone) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      font-size: 1.8rem;
+    }
   }
 
   &__group {
@@ -40,6 +46,10 @@
 
       @include respond(tab-port) {
         margin-right: 3rem;
+      }
+
+      @include respond(phone) {
+        margin-right: 0;
       }
     }
 

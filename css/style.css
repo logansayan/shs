@@ -334,7 +334,7 @@ hr {
     scroll-behavior: smooth;
     margin: 0 auto;
     width: min-content;
-    max-height: 25rem; }
+    max-height: 23rem; }
   .notices__item {
     display: flex;
     align-items: center;
@@ -641,8 +641,13 @@ hr {
         margin-bottom: 3rem; } }
   .footer__content {
     display: flex;
-    margin: 0 1rem;
     margin-bottom: 5rem; }
+    @media (max-width: 37.5em) {
+      .footer__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        font-size: 1.8rem; } }
   .footer__group {
     list-style: none;
     max-width: 20rem; }
@@ -651,6 +656,9 @@ hr {
       @media (max-width: 59.375em) {
         .footer__group:not(:last-child) {
           margin-right: 3rem; } }
+      @media (max-width: 37.5em) {
+        .footer__group:not(:last-child) {
+          margin-right: 0; } }
     .footer__group--title {
       color: #393E46; }
   .footer__item--link, .footer__item--link:visited, .footer__item--link:link {
